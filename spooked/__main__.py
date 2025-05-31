@@ -1,6 +1,8 @@
 import sys
+
 from PyQt6.QtWidgets import QApplication
-from spooked import Window
+
+from .window import Window
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
