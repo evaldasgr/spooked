@@ -18,3 +18,4 @@ class Window(QMainWindow):
         self.move(fg.topLeft())
 
         self.setMenuBar(MenuBar(self))
+        self.setStatusBar(StatusBar(self))
