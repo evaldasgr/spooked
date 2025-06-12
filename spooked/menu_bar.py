@@ -6,7 +6,7 @@ from spooked.dialogs.about_dialog import AboutDialog
 
 class MenuBar(QMenuBar):
     def __init__(self, parent=None):
-        super(QMenuBar, self).__init__(parent)
+        super().__init__(parent)
 
         self._init_file()
         self._init_edit()

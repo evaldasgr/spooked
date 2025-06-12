@@ -7,7 +7,7 @@ from .resources.resources import Resources
 
 class Window(QMainWindow):
     def __init__(self):
-        super(Window, self).__init__()
+        super().__init__()
 
         self.setWindowIcon(QIcon(Resources.icon))
         self.setWindowTitle("Spooky Editor")

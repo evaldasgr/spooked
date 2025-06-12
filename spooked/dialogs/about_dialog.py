@@ -6,7 +6,7 @@ from ..resources.resources import Resources
 
 class AboutDialog(QDialog):
     def __init__(self, parent=None):
-        super(AboutDialog, self).__init__(parent)
+        super().__init__(parent)
 
         self.setWindowTitle("About")
         self.setModal(True)
