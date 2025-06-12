@@ -1,6 +1,8 @@
 from PyQt6.QtGui import QAction
 from PyQt6.QtWidgets import QMenuBar, QMenu
 
+from spooked.dialogs.about_dialog import AboutDialog
+
 
 class MenuBar(QMenuBar):
     def __init__(self, parent=None):
@@ -118,6 +120,7 @@ class MenuBar(QMenuBar):
 
         item_about = QAction(self)
         item_about.setText("About...")
+        item_about.triggered.connect(lambda: AboutDialog(self.parent()).open())
         menu.addAction(item_about)
 
         self.addAction(menu.menuAction())
